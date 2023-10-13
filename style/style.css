@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+div.transition-box{
+    height: 500px;
+    width: 500px;
+    background-image: url('https://www.warrenphotographic.co.uk/photography/bigs/06013-Silver-kitten-and-goat-white-background.jpg');
+    transition: all 1s;
+    border: 1rem black solid;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    filter: grayscale(50%) sepia(50%);
+
+}
+
+div.transition-box:hover{
+    filter: none;
+}
+
+div.animation-box{
+    /* position: absolute; */
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    background-color: blueviolet;
+/*
+    animation-name: animazione-custom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+
+
+
+
+@keyframes animazione-custom{
+    0% {
+        background-color: red;
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 4rem;
+    }
+    25% {
+        background-color: yellow;
+        margin-left: 200px;
+        margin-top: 0px;
+        font-size: 7rem;
+    }
+    50% {
+        background-image: url('https://i.natgeofe.com/k/271050d8-1821-49b8-bf0b-3a4a72b6384a/obama-portrait_.jpg?w=1084.125&h=1380.75');
+        background-size: cover;
+        background-position: center;
+        margin-left: 200px;
+        margin-top: 200px;
+        font-size: 1rem;
+    }
+    75% {
+        background-color: green;
+        margin-left: 0px;
+        margin-top: 200px;
+    }
+    100% {
+        background-color: red;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
